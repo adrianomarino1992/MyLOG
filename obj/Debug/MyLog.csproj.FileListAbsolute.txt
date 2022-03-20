@@ -1,0 +1,7 @@
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Debug\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Debug\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Debug\MyLog.csproj.CoreCompileInputs.cache
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Debug\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Debug\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Debug\MyLog.csproj.AssemblyReference.cache
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Debug\MyLog.xml

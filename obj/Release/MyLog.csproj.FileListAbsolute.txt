@@ -1,0 +1,16 @@
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Release\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Release\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Release\MyLog.csproj.CoreCompileInputs.cache
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Release\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Release\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\bin\Release\MyLog.xml
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net460\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net460\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net460\MyLog.xml
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net461\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net461\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net461\MyLog.xml
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net472\MyLog.dll
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net472\MyLog.pdb
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\Libs\MyLogs\net472\MyLog.xml
+C:\Users\LuisDev\Desktop\Toolbox\ToolBox\MyLog\obj\Release\MyLog.csproj.AssemblyReference.cache

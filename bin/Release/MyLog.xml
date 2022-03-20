@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyLog</name>
+    </assembly>
+    <members>
+        <member name="T:MyLog.TypeOf`1">
+            <summary>
+            The static class that manage all logs in the system
+            </summary>
+            <typeparam name="T">A identify type for the logs objects</typeparam>
+        </member>
+        <member name="T:MyLog.TypeOf`1._propChange">
+            <summary>
+            The type of delegate that is called to keep the defaults properties and the instance properties synchronized
+            </summary>
+            <param name="propertyCaller">Do not pass this argument in some override, because it will come from CLR</param>
+        </member>
+        <member name="E:MyLog.TypeOf`1.OnPropertyChange">
+            <summary>
+            The event to synchronize all properties
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._folder">
+            <summary>
+            The folder to save the files
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultFolder">
+            <summary>
+            Default folder witch the files will be saved
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._defaultFileNamePrefix">
+            <summary>
+            Some text to be added to the beginning of file name 
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultFileNamePrefix">
+            <summary>
+            Some text to be added to the beginning of file name 
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._maxFiles">
+            <summary>
+            Max quantity of files will be keeped in the folder, Atention !, not is taken in account the identifier of object, but the number of files in folder        
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultMaxFiles">
+            <summary>
+            Max quantity of files will be keeped in the folder, Atention !, not is taken in account the identifier of object, but the number of files in folder        
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._fileSize">
+            <summary>
+            The default size of llg files
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultFileSize">
+            <summary>
+            The default size of llg files in KB
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._fullStack">
+            <summary>
+            Defines if the <see cref="T:System.Diagnostics.StackTrace"/> must be writen too
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultFullStack">
+            <summary>
+            Defines if the <see cref="T:System.Diagnostics.StackTrace"/> must be writen too
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._logsType">
+            <summary>
+            Defines the type of log
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultLogType">
+            <summary>
+            Defines the type of log
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._wsConfig">
+            <summary>
+            This object contains information of how to handler the WS Log
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.DefaultWSConfig">
+            <summary>
+            This object contains information of how to handler the WS Log
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._logs">
+            <summary>
+            The binding context of objects
+            </summary>
+        </member>
+        <member name="F:MyLog.TypeOf`1._instance">
+            <summary>
+            The instance of class to be possible we have a singleton unity
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.Collection">
+            <summary>
+            A log object collection
+            Pass a value of the identifier type to retrive a log object, if its dont exists, will be created         
+            </summary>
+        </member>
+        <member name="P:MyLog.TypeOf`1.Item(`0)">
+            <summary>
+            Inform the identifier
+            </summary>
+            <param name="key"></param>
+            <returns>Returns a log object</returns>
+        </member>
+        <member name="T:MyLog.Writer">
+            <summary>
+            This class encapsulates the log writer
+            </summary>
+        </member>
+        <member name="F:MyLog.Writer._folder">
+            <summary>
+            The folder witch the files will be saved
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.Folder">
+            <summary>
+            The folder witch the files will be saved
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.FileNamePrefix">
+            <summary>
+            Some text to be added to the beginning of file name 
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.MaxFiles">
+            <summary>
+            The quantity of files in folder
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.FileSize">
+            <summary>
+            The file´s sizes in KB
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.FullStack">
+            <summary>
+            Define if the log will write information about the StackTrace
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.LogType">
+            <summary>
+            Defines the type of log
+            </summary>
+        </member>
+        <member name="P:MyLog.Writer.WSConfig">
+            <summary>
+            This object contains information of how to handler the WS Log
+            </summary>
+        </member>
+        <member name="F:MyLog.Writer._ext">
+            <summary>
+            The extension of logs files
+            </summary>
+        </member>
+        <member name="M:MyLog.Writer.WriteLog(System.String,System.Int32,System.String,System.String[])">
+            <summary>
+            This method is used to write the log, the optional params, if not informed, will bet get from Common Language Runtime in runtime, thus making this informations avaliable in a future       
+            </summary>
+            <param name="caller">The method who called the logger</param>
+            <param name="line">The line of code that the logger is called from</param>
+            <param name="path">The code´s path</param>
+            <param name="message">All logs message</param>
+        </member>
+        <member name="M:MyLog.Writer.WriteWithStackTrace(System.Boolean)">
+            <summary>
+            Defines if is to save the full stack trace is this log write
+            </summary>
+            <param name="useStack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyLog.Writer._GetNextFile">
+            <summary>
+            Get the next file avaliable. 
+            This method will make the control of files.
+            </summary>
+            <returns>Returns the file that must be write</returns>
+        </member>
+        <member name="M:MyLog.Writer.#ctor(System.String,System.Int32,System.Int32,System.Boolean,MyLog.WS.LogsType,MyLog.WS.LogWSConfig,System.String)">
+            <summary>
+            Create a log object
+            </summary>
+            <param name="folder">The folder witch the files will be saved</param>
+            <param name="maxFiles">The max quantity of files that will be keeped </param>
+            <param name="fileSize">The max size of files</param>
+            <param name="fullStack">If the <see cref="T:System.Diagnostics.StackTrace"/> must be writed</param>
+            <param name="logType">The type of log</param>
+            <param name="wsConfig">Configurations to connect to WS</param>
+            <param name="fileNamePrefix">Prefix of logs files</param>
+        </member>
+        <member name="T:MyLog.Ext">
+            <summary>
+            Helper class
+            </summary>
+        </member>
+        <member name="M:MyLog.Ext.RemoveSpecialChars(System.String)">
+            <summary>
+            Remove all specials chars of a string
+            </summary>
+            <param name="strIn">The input string</param>
+            <returns>The formated string</returns>
+        </member>
+        <member name="T:MyLog.WS.LogsType">
+            <summary>
+            Enum that defines a type of log
+            </summary>
+        </member>
+        <member name="F:MyLog.WS.LogsType.WS">
+            <summary>
+            Defines to save log only in WS
+            </summary>
+        </member>
+        <member name="F:MyLog.WS.LogsType.FILE">
+            <summary>
+            Defines to save log only in files
+            </summary>
+        </member>
+        <member name="F:MyLog.WS.LogsType.WSANDFILE">
+            <summary>
+            Define to save log in both, WS and file
+            </summary>
+        </member>
+        <member name="T:MyLog.WS.AsyncWSCallback">
+            <summary>
+            Async delegate to handle the HTTP call callback
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:MyLog.WS.WSSerializer">
+            <summary>
+            A delegate to show how to serializer the <see cref="T:MyLog.WS.WSObject"/>, this way allow to send JSON or XML data
+            </summary>
+            <param name="obj">The <see cref="T:MyLog.WS.WSObject"/> witch will be send</param>
+            <returns>Returns the <see cref="T:MyLog.WS.WSObject"/> serialized as JSON or XML string</returns>
+        </member>
+        <member name="T:MyLog.WS.WSErrorHandler">
+            <summary>
+            Delegate to handle the WS error 
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="T:MyLog.WS.LogWSConfig">
+            <summary>
+            Classes to encapsulates WS configurations
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.URL">
+            <summary>
+            The Universal Resource Identifier of WS
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.Headers">
+            <summary>
+            A list of headers to attach on POST request
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.Callback">
+            <summary>
+            A callback function to handler the WS response
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.Encoding">
+            <summary>
+            The encoding of data
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.Serializer">
+            <summary>
+            The way that content will serialized, e.g JSON or XML
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.ErrorHandler">
+            <summary>
+            A function to handler the error of process that send the request to WS
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.LogWSConfig.MediaType">
+            <summary>
+            The media type of content serialized
+            </summary>
+        </member>
+        <member name="T:MyLog.WS.WSObject">
+            <summary>
+            Classe that encapsulates a HTTP content
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.WSObject.Date">
+            <summary>
+            The date of log must be marked
+            </summary>
+        </member>
+        <member name="P:MyLog.WS.WSObject.Logs">
+            <summary>
+            The list of logs
+            </summary>
+        </member>
+        <member name="M:MyLog.WS.WSObject.#ctor">
+            <summary>
+            A empty constructor to help with serialization with reflections
+            </summary>
+        </member>
+    </members>
+</doc>
