@@ -1,6 +1,6 @@
-# MyORMForMySQL
+# MyLog
 
-MyORMForMySQL is a implementation of MyORM that uses MySQL as database. 
+MyLog is simple log lib. 
 
 ## Installation
 
